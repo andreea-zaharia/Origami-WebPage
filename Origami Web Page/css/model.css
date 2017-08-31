@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: "Roboto";
+	font-weight: 300;
+}
+
+header {
+	padding: 20px 0;
+}
+
+header h1, header a {
+	margin: 0;
+	font-weight: 700;
+	color: #000000;
+}
+
+header h1, header a:hover {
+	color: Orange;
+	text-decoration: none;
+}
+
+header .row {
+	display: flex;
+	align-items: center;
+}
+
+header nav {
+	display: flex;
+	justify-content: flex-end;
+}
+
+header p {
+	padding: 0 20px;
+	margin: 0;
+}
+
+.jumbotron {
+	display: flex;
+	align-items: left;
+	background-image: url(../img/sketch.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 200px;
+}
+
+.jumbotron h2 {
+	position: relative;
+	left: 70px;
+	top: -10px;
+	color: font-size: 60px;
+	font-weight: 700;
+	font-size: 60px;
+	margin: 0;
+	color: AntiqueWhite;
+	text-shadow: 2px 2px DarkSalmon;
+}
+
+.item img{
+	width: 100%;
+}
+
+
+section .row img{
+	margin: 0 0 30px;
+	width: 100%
+}
+
+section .row img:hover {
+	position: relative;
+	left: 5px;
+	top: 5px;
+}
+
+footer {
+	margin: 50px 0 50px;
+	padding: 10px 0 0;
+}
+
+footer .row p {
+	margin-left: 40px;
+	border-bottom: dotted;
+	border-left: dotted;
+	border-color: Red;
+	padding: 5px 0 0;
+	font-weight: 700;
+	font-size: 20px;
+	color: DarkRed;	
+}
+
+
+

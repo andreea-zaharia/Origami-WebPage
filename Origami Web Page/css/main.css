@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: "Roboto";
+	font-weight: 300;
+}
+
+header {
+	padding: 20px 0;
+}
+
+header h1, header a {
+	margin: 0;
+	font-weight: 700;
+	color: #000000;
+}
+
+header h1, header a:hover {
+	color: #AE172D;
+	text-decoration: none;
+}
+
+header .row {
+	display: flex;
+	align-items: center;
+}
+
+header nav {
+	display: flex;
+	justify-content: flex-end;
+}
+
+header p {
+	padding: 0 20px;
+	margin: 0;
+}
+
+.jumbotron {
+	display: flex;
+	align-items: center;
+	background-image: url(../img/dresses.jpg);
+	background-size: cover;
+	background-position: center;
+  	height: 500px;
+}
+
+.jumbotron h2 {
+	font-size: 60px;
+	font-weight: 700;
+	margin: 0;
+	color: #121C69;
+	text-shadow: 3px 3px AntiqueWhite;
+	position: relative;
+	top: 30px;
+}
+
+.jumbotron h3 {
+	margin: 0 0 20px;
+	font-weight: 500;
+	position: relative;
+	top: 30px;
+}
+
+.btn.btn-primary {
+  border-radius: 15px;
+  border-size: 10px;
+  border-color: DarkBlue;  
+  color: DarkBlue;
+  text-shadow: none;
+  background-color: AntiqueWhite;
+  position: relative;
+  top: 30px;
+}
+
+.btn.btn-primary:hover {
+  color: #ffffff;
+  background-color: DarkBlue;
+}
+
+section .row img{
+	margin: 0 0 30px;
+	width: 100%
+}
+
+section .row img:hover {
+	position: relative;
+	left: 5px;
+	top: 5px;
+}
+
+footer {
+	margin: 50px 0 50px;
+	padding: 10px 0 0;
+}
+
+footer .row p {
+	margin-left: 40px;
+	border-bottom: dotted;
+	border-left: dotted;
+	border-color: DeepSkyBlue;
+	padding: 5px 0 0;
+	font-weight: 700;
+	font-size: 20px;
+	color: #121C69;	
+}
+

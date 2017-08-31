@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+    <!-- BEGIN HEAD -->
+    <head>
+		<meta charset="utf-8">
+		<title>Origami</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+        <!-- GLOBAL MANDATORY STYLES -->
+        <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+        <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css"/>
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+		
+        <!-- THEME STYLES -->
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <!-- END HEAD -->
+
+    <!-- BODY -->
+    <body id="body" data-spy="scroll" data-target=".header">
+
+        <!--========== HEADER ==========-->
+        <header class="container">
+			<div class="row">
+				<h1 class="col-sm-8"><a href="index.html">Origami</a></h1>
+				<nav class="col-sm-4">
+					<p><a href="index.html">Home</a></p>
+					<p><a href="search.html">Search</a></p>
+					<p><a href="contact.html">Contact</a></p>
+				</nav>
+			</div>
+		</header>
+        <!--========== END HEADER ==========-->
+
+		<section class="jumbotron">
+			<div class="container">
+				<div class="row text-left">
+					<h2>Search</h2>
+				</div>
+			</div>
+		</section>	
+        <!-- Work -->
+        <div id="work">
+			<div class="container content-lg">
+                <!--// end row -->
+				
+				<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for a model..">
+
+					<ul id="myUL">
+					  <li><a href="#" class="header">B</a></li>
+					  <li><a href="boat.html">Boat</a></li>
+					  <li><a href="bookmark.html">Bookmark</a></li>
+					  <li><a href="box.html">Box</a></li>
+					  <li><a href="butterfly.html">Butterfly</a></li>
+
+					  <li><a href="#" class="header">C</a></li>
+					  <li><a href="cup.html">Cup</a></li>
+					  
+					  <li><a href="#" class="header">F</a></li>
+					  <li><a href="fish.html">Fish</a></li>
+					  <li><a href="flower.html">Flower</a></li>
+					  <li><a href="frog.html">Frog</a></li>
+					  
+					  <li><a href="#" class="header">H</a></li>
+					  <li><a href="heart.html">Heart</a></li>
+					  
+					  <li><a href="#" class="header">P</a></li>
+					  <li><a href="plane.html">Plane</a></li>
+					  
+					  <li><a href="#" class="header">P</a></li>
+					  <li><a href="star.html">Star</a></li>
+					</ul>
+				
+					<script>
+						function myFunction() {
+							// Declare variables
+							var input, filter, ul, li, a, i;
+							input = document.getElementById('myInput');
+							filter = input.value.toUpperCase();
+							ul = document.getElementById("myUL");
+							li = ul.getElementsByTagName('li');
+
+							// Loop through all list items, and hide those who don't match the search query
+							for (i = 0; i < li.length; i++) {
+								a = li[i].getElementsByTagName("a")[0];
+								if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+									li[i].style.display = "";
+								} else {
+									li[i].style.display = "none";
+								}
+							}
+						}
+					</script>
+				</input>	
+            </div>
+        </div>
+        <!-- End Work -->
+
+		<footer class="container">
+			<div class="row">
+				<p class="col-sm-6 text-center"><em>As we fold a piece of paper everything changes.</em> - Dave Brill</p>
+			</div>
+		</footer>
+    </body>
+    <!-- END BODY -->
+</html>
